@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Shop premium clothing at THREADS. Discover timeless T-shirts, shirts, hoodies, sweatshirts, jackets and more."
+    >
+
+    <meta
+        name="keywords"
+        content="THREADS clothing, premium clothing, fashion, T-shirts, shirts, hoodies, sweatshirts, jackets"
+    >
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Shop | THREADS Clothing Co.</title>
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         GLOBAL + SHOP STYLES
+    ====================================================== -->
+
+
+<link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Mobile Menu -->
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileNavigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <!-- Brand -->
+
+            <a
+                href="index.html"
+                class="brand-logo"
+                aria-label="THREADS Clothing Co. home"
+            >
+                THREADS
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav
+                class="desktop-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+
+                <a
+                    href="shop.html"
+                    class="active"
+                    aria-current="page"
+                >
+                    Shop
+                </a>
+
+                <a href="shop.html?category=new-arrivals">
+                    New Arrivals
+                </a>
+
+                <a href="shop.html?category=best-sellers">
+                    Best Sellers
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="header-actions">
+
+                <button
+                    type="button"
+                    class="header-action search-button"
+                    id="searchButton"
+                    aria-label="Search"
+                    aria-expanded="false"
+                    aria-controls="searchContainer"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="11"
+                            cy="11"
+                            r="7"
+                        ></circle>
+
+                        <line
+                            x1="16.5"
+                            y1="16.5"
+                            x2="21"
+                            y2="21"
+                        ></line>
+                    </svg>
+                </button>
+
+
+                <a
+                    href="wishlist.html"
+                    class="header-action wishlist-link"
+                    aria-label="Wishlist"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.1a4.7 4.7 0 0 1 8.8 2.6Z"
+                        ></path>
+                    </svg>
+                </a>
+
+
+                <a
+                    href="cart.html"
+                    class="header-action cart-link"
+                    aria-label="Shopping cart"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 8H6"
+                        ></path>
+
+                        <circle
+                            cx="9"
+                            cy="20"
+                            r="1"
+                        ></circle>
+
+                        <circle
+                            cx="18"
+                            cy="20"
+                            r="1"
+                        ></circle>
+                    </svg>
+
+                    <span
+                        id="cartCount"
+                        class="cart-count"
+                        hidden
+                    >
+                        0
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SEARCH CONTAINER
+        ================================================== -->
+
+        <div
+            class="search-container"
+            id="searchContainer"
+        >
+
+            <form
+                id="searchForm"
+                class="search-form"
+            >
+
+                <label
+                    for="searchInput"
+                    class="sr-only"
+                >
+                    Search clothing
+                </label>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    name="search"
+                    placeholder="Search clothing..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="submit"
+                    aria-label="Submit search"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="11"
+                            cy="11"
+                            r="7"
+                        ></circle>
+
+                        <line
+                            x1="16.5"
+                            y1="16.5"
+                            x2="21"
+                            y2="21"
+                        ></line>
+                    </svg>
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- =================================================
+             MOBILE NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="mobile-navigation"
+            id="mobileNavigation"
+            aria-label="Mobile navigation"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="shop.html"
+                aria-current="page"
+            >
+                Shop
+            </a>
+
+            <a href="shop.html?category=new-arrivals">
+                New Arrivals
+            </a>
+
+            <a href="shop.html?category=best-sellers">
+                Best Sellers
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             SHOP HERO
+        ================================================== -->
+
+        <section class="shop-hero">
+
+            <div class="shop-hero-content">
+
+                <span class="section-eyebrow">
+                    THE THREADS COLLECTION
+                </span>
+
+                <h1>
+                    Wear Your
+                    <em>Identity.</em>
+                </h1>
+
+                <p>
+                    Discover thoughtfully designed clothing
+                    created for effortless everyday style.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SHOP CONTENT
+        ================================================== -->
+
+        <section class="shop-section">
+
+            <div class="shop-container">
+
+
+                <!-- =============================================
+                     SHOP TOP
+                ============================================== -->
+
+                <div class="shop-top">
+
+                    <div class="shop-heading">
+
+                        <span class="section-eyebrow">
+                            EXPLORE
+                        </span>
+
+                        <h2>
+                            All Clothing
+                        </h2>
+
+                    </div>
+
+
+                    <div class="shop-result-info">
+
+                        <span id="productCount">
+                            Discover our collection
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     SHOP TOOLBAR
+                ============================================== -->
+
+                <div class="shop-toolbar">
+
+
+                    <!-- Mobile Filter Button -->
+
+                    <button
+                        type="button"
+                        class="filter-toggle"
+                        id="filterToggle"
+                        aria-expanded="false"
+                        aria-controls="shopFilters"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <line
+                                x1="4"
+                                y1="6"
+                                x2="20"
+                                y2="6"
+                            ></line>
+
+                            <line
+                                x1="7"
+                                y1="12"
+                                x2="17"
+                                y2="12"
+                            ></line>
+
+                            <line
+                                x1="10"
+                                y1="18"
+                                x2="14"
+                                y2="18"
+                            ></line>
+                        </svg>
+
+                        Filters
+                    </button>
+
+
+                    <!-- Sort -->
+
+                    <div class="sort-control">
+
+                        <label for="sortProducts">
+                            Sort by
+                        </label>
+
+                        <select
+                            id="sortProducts"
+                            name="sort"
+                        >
+                            <option value="featured">
+                                Featured
+                            </option>
+
+                            <option value="newest">
+                                Newest
+                            </option>
+
+                            <option value="price-low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="price-high">
+                                Price: High to Low
+                            </option>
+
+                            <option value="rating">
+                                Highest Rated
+                            </option>
+
+                            <option value="name-asc">
+                                Name: A to Z
+                            </option>
+
+                            <option value="name-desc">
+                                Name: Z to A
+                            </option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     SHOP BODY
+                ============================================== -->
+
+                <div class="shop-layout">
+
+
+                    <!-- =========================================
+                         FILTER SIDEBAR
+                    ========================================== -->
+
+                    <aside
+                        class="shop-filters"
+                        id="shopFilters"
+                        aria-label="Product filters"
+                    >
+
+                        <div class="filters-header">
+
+                            <h3>
+                                Filter
+                            </h3>
+
+                            <button
+                                type="button"
+                                id="clearFilters"
+                                class="clear-filters"
+                            >
+                                Clear all
+                            </button>
+
+                        </div>
+
+
+                        <!-- CATEGORY FILTER -->
+
+                        <div class="filter-group">
+
+                            <h4>
+                                Category
+                            </h4>
+
+                            <div class="filter-options">
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="t-shirts"
+                                    >
+
+                                    <span>
+                                        T-Shirts
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="shirts"
+                                    >
+
+                                    <span>
+                                        Shirts
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="hoodies"
+                                    >
+
+                                    <span>
+                                        Hoodies
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="sweatshirts"
+                                    >
+
+                                    <span>
+                                        Sweatshirts
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="long-sleeves"
+                                    >
+
+                                    <span>
+                                        Long Sleeves
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="trousers"
+                                    >
+
+                                    <span>
+                                        Trousers
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="jeans"
+                                    >
+
+                                    <span>
+                                        Jeans
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="jackets"
+                                    >
+
+                                    <span>
+                                        Jackets
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="shorts"
+                                    >
+
+                                    <span>
+                                        Shorts
+                                    </span>
+                                </label>
+
+
+                                <label class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        name="category"
+                                        value="dresses"
+                                    >
+
+                                    <span>
+                                        Dresses
+                                    </span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PRICE FILTER -->
+
+                        <div class="filter-group">
+
+                            <h4>
+                                Price
+                            </h4>
+
+                            <div class="price-inputs">
+
+                                <div class="price-input">
+
+                                    <label for="minPrice">
+                                        Min
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        id="minPrice"
+                                        name="minPrice"
+                                        min="0"
+                                        placeholder="₦0"
+                                    >
+
+                                </div>
+
+
+                                <span class="price-separator">
+                                    —
+                                </span>
+
+
+                                <div class="price-input">
+
+                                    <label for="maxPrice">
+                                        Max
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        id="maxPrice"
+                                        name="maxPrice"
+                                        min="0"
+                                        placeholder="₦∞"
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- AVAILABILITY -->
+
+                        <div class="filter-group">
+
+                            <h4>
+                                Availability
+                            </h4>
+
+                            <label class="filter-option">
+
+                                <input
+                                    type="checkbox"
+                                    id="inStockOnly"
+                                    name="availability"
+                                    value="in-stock"
+                                >
+
+                                <span>
+                                    In Stock Only
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- PRODUCT TYPE -->
+
+                        <div class="filter-group">
+
+                            <h4>
+                                Collection
+                            </h4>
+
+                            <div class="filter-options">
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="checkbox"
+                                        name="collection"
+                                        value="new"
+                                    >
+
+                                    <span>
+                                        New Arrivals
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="checkbox"
+                                        name="collection"
+                                        value="featured"
+                                    >
+
+                                    <span>
+                                        Featured
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="checkbox"
+                                        name="collection"
+                                        value="sale"
+                                    >
+
+                                    <span>
+                                        On Sale
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- =========================================
+                         PRODUCT AREA
+                    ========================================== -->
+
+                    <div class="shop-products-area">
+
+
+                        <!-- Active Filters -->
+
+                        <div
+                            class="active-filters"
+                            id="activeFilters"
+                            aria-live="polite"
+                        >
+                        </div>
+
+
+                        <!-- Product Grid -->
+
+                        <div
+                            class="product-grid shop-product-grid"
+                            id="shopProductsGrid"
+                        >
+
+                            <!--
+                                Products are loaded from backend.
+
+                                Example endpoint:
+
+                                GET /api/products
+
+                                No products are hard-coded here.
+                            -->
+
+                            <div class="products-loading">
+
+                                <span
+                                    class="loading-spinner"
+                                ></span>
+
+                                <p>
+                                    Loading collection...
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =====================================
+                             EMPTY STATE
+                        ====================================== -->
+
+                        <div
+                            class="shop-empty"
+                            id="shopEmpty"
+                            hidden
+                        >
+
+                            <div class="empty-icon">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <circle
+                                        cx="11"
+                                        cy="11"
+                                        r="7"
+                                    ></circle>
+
+                                    <line
+                                        x1="16.5"
+                                        y1="16.5"
+                                        x2="21"
+                                        y2="21"
+                                    ></line>
+                                </svg>
+
+                            </div>
+
+                            <h3>
+                                Nothing found
+                            </h3>
+
+                            <p>
+                                We couldn't find clothing
+                                matching your current filters.
+                            </p>
+
+                            <button
+                                type="button"
+                                class="button button-dark"
+                                id="emptyClearFilters"
+                            >
+                                Clear Filters
+                            </button>
+
+                        </div>
+
+
+                        <!-- =====================================
+                             PAGINATION
+                        ====================================== -->
+
+                        <nav
+                            class="pagination"
+                            id="pagination"
+                            aria-label="Product pagination"
+                        >
+
+                            <button
+                                type="button"
+                                class="pagination-button previous"
+                                id="previousPage"
+                                aria-label="Previous page"
+                                disabled
+                            >
+                                ←
+                            </button>
+
+
+                            <div
+                                class="pagination-pages"
+                                id="paginationPages"
+                            >
+                                <!-- Generated by shop.js -->
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="pagination-button next"
+                                id="nextPage"
+                                aria-label="Next page"
+                            >
+                                →
+                            </button>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SHOP CTA
+        ================================================== -->
+
+        <section class="shop-cta">
+
+            <div class="shop-cta-content">
+
+                <span class="section-eyebrow">
+                    YOUR STYLE. YOUR RULES.
+                </span>
+
+                <h2>
+                    Find something
+                    <em>that feels like you.</em>
+                </h2>
+
+                <p>
+                    Explore the THREADS collection and
+                    discover pieces made to become part
+                    of your everyday wardrobe.
+                </p>
+
+                <a
+                    href="shop.html"
+                    class="button button-light"
+                >
+                    Explore Collection
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                >
+                    THREADS
+                </a>
+
+                <p>
+                    Premium clothing designed for
+                    modern everyday living.
+                </p>
+
+            </div>
+
+
+            <!-- Shop -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Shop
+                </h3>
+
+                <a href="shop.html">
+                    All Clothing
+                </a>
+
+                <a href="shop.html?category=new-arrivals">
+                    New Arrivals
+                </a>
+
+                <a href="shop.html?category=best-sellers">
+                    Best Sellers
+                </a>
+
+                <a href="shop.html?category=sale">
+                    Sale
+                </a>
+
+            </div>
+
+
+            <!-- Help -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Help
+                </h3>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+                <a href="shipping.html">
+                    Shipping
+                </a>
+
+                <a href="returns.html">
+                    Returns
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+            </div>
+
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+                <a href="index.html#about">
+                    About THREADS
+                </a>
+
+                <a href="privacy.html">
+                    Privacy
+                </a>
+
+                <a href="terms.html">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                THREADS Clothing Co.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MOBILE BOTTOM NAVIGATION
+    ====================================================== -->
+
+    <nav
+        class="mobile-bottom-navigation"
+        aria-label="Mobile quick navigation"
+    >
+
+        <a href="index.html">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M3 10.5 12 3l9 7.5v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"
+                ></path>
+            </svg>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a
+            href="shop.html"
+            class="active"
+            aria-current="page"
+        >
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M5 4h14l1 4H4z"
+                ></path>
+
+                <path
+                    d="M4 8h16v12H4z"
+                ></path>
+            </svg>
+
+            <span>
+                Shop
+            </span>
+
+        </a>
+
+
+        <a href="wishlist.html">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.1a4.7 4.7 0 0 1 8.8 2.6Z"
+                ></path>
+            </svg>
+
+            <span>
+                Wishlist
+            </span>
+
+        </a>
+
+
+        <a href="cart.html">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 8H6"
+                ></path>
+
+                <circle
+                    cx="9"
+                    cy="20"
+                    r="1"
+                ></circle>
+
+                <circle
+                    cx="18"
+                    cy="20"
+                    r="1"
+                ></circle>
+            </svg>
+
+            <span>
+                Cart
+            </span>
+
+            <span
+                class="bottom-cart-count"
+                id="bottomCartCount"
+                hidden
+            >
+                0
+            </span>
+
+        </a>
+
+    </nav>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/shop.js"></script>
+
+</body>
+</html>
